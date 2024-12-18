@@ -70,6 +70,59 @@ Some of the more interesting ones include:
 
 # Installation
 
+## From a Pre-Built Package
+
+Binary packages for some distributions exist.  These are kindly maintained by
+community members; the keyd developers do not take responsibility for them.  If
+you wish to add yours below, please open a PR.
+
+### Alpine Linux
+
+[keyd](https://pkgs.alpinelinux.org/packages?name=keyd) package maintained by [@jirutka](https://github.com/jirutka).
+
+### Arch
+
+[Arch Linux](https://archlinux.org/packages/extra/x86_64/keyd/) package maintained by Arch packagers.
+
+### Debian
+
+A keyd package is available in Debian 13 ("trixie") and later.  To install:
+
+```shell
+sudo apt install keyd
+```
+
+### Fedora
+
+[COPR](https://copr.fedorainfracloud.org/coprs/alternateved/keyd/) package maintained by [@alternateved](https://github.com/alternateved).
+
+### Gentoo
+
+[GURU](https://gitweb.gentoo.org/repo/proj/guru.git/tree/app-misc/keyd) package maintained by [jack@pngu.org](mailto:jack@pngu.org).
+
+### openSUSE
+[opensuse](https://software.opensuse.org//download.html?project=hardware&package=keyd) package maintained by [@bubbleguuum](https://github.com/bubbleguuum).
+
+Easy install with `sudo zypper in keyd`.
+
+### Ubuntu
+
+A keyd package is available in Ubuntu 25.04 ("plucky") and later.  To install:
+
+```shell
+sudo apt install keyd
+```
+
+In addition, the latest Debian package backported to various Ubuntu releases can
+be found in the [`ppa:keyd-team/ppa`
+archive](https://launchpad.net/~keyd-team/+archive/ubuntu/ppa).
+
+### Void Linux
+
+[xbps](https://github.com/void-linux/void-packages/tree/master/srcpkgs/keyd) package maintained by [@Barbaross](https://gitlab.com/Barbaross).
+
+Easy install with `sudo xbps-install -Su keyd`.
+
 ## From Source
 
 > [!NOTE]
@@ -158,59 +211,6 @@ Experimental support for single board computers (SBCs) via usb-gadget
 has been added courtesy of Giorgi Chavchanidze.
 
 See [usb-gadget.md](src/vkbd/usb-gadget.md) for details.
-
-## Packages
-
-Binary packages for some distributions exist.  These are kindly maintained by
-community members; the keyd developers do not take responsibility for them.  If
-you wish to add yours below, please open a PR.
-
-### Alpine Linux
-
-[keyd](https://pkgs.alpinelinux.org/packages?name=keyd) package maintained by [@jirutka](https://github.com/jirutka).
-
-### Arch
-
-[Arch Linux](https://archlinux.org/packages/extra/x86_64/keyd/) package maintained by Arch packagers.
-
-### Debian
-
-A keyd package is available in Debian 13 ("trixie") and later.  To install:
-
-```shell
-sudo apt install keyd
-```
-
-### Fedora
-
-[COPR](https://copr.fedorainfracloud.org/coprs/alternateved/keyd/) package maintained by [@alternateved](https://github.com/alternateved).
-
-### Gentoo
-
-[GURU](https://gitweb.gentoo.org/repo/proj/guru.git/tree/app-misc/keyd) package maintained by [jack@pngu.org](mailto:jack@pngu.org).
-
-### openSUSE
-[opensuse](https://software.opensuse.org//download.html?project=hardware&package=keyd) package maintained by [@bubbleguuum](https://github.com/bubbleguuum).
-
-Easy install with `sudo zypper in keyd`.
-
-### Ubuntu
-
-A keyd package is available in Ubuntu 25.04 ("plucky") and later.  To install:
-
-```shell
-sudo apt install keyd
-```
-
-In addition, the latest Debian package backported to various Ubuntu releases can
-be found in the [`ppa:keyd-team/ppa`
-archive](https://launchpad.net/~keyd-team/+archive/ubuntu/ppa).
-
-### Void Linux
-
-[xbps](https://github.com/void-linux/void-packages/tree/master/srcpkgs/keyd) package maintained by [@Barbaross](https://gitlab.com/Barbaross).
-
-Easy install with `sudo xbps-install -Su keyd`.
 
 # Example 1
 
