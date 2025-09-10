@@ -70,10 +70,67 @@ Some of the more interesting ones include:
 
 # Installation
 
-*Note:* master serves as the development branch, things may occasionally break
-between releases. Releases are [tagged](https://github.com/rvaiya/keyd/tags), and should be considered stable.
+## From a Pre-Built Package
+
+Binary packages for some distributions exist.  These are kindly maintained by
+community members; the keyd developers do not take responsibility for them.  If
+you wish to add yours below, please open a PR.
+
+### Alpine Linux
+
+[keyd](https://pkgs.alpinelinux.org/packages?name=keyd) package maintained by [@jirutka](https://github.com/jirutka).
+
+### Arch
+
+[Arch Linux](https://archlinux.org/packages/extra/x86_64/keyd/) package maintained by Arch packagers.
+
+### Debian
+
+A keyd package is available in Debian 13 ("trixie") and later.  To install:
+
+```shell
+sudo apt install keyd
+```
+
+### Fedora
+
+[COPR](https://copr.fedorainfracloud.org/coprs/alternateved/keyd/) package maintained by [@alternateved](https://github.com/alternateved).
+
+### Gentoo
+
+[GURU](https://gitweb.gentoo.org/repo/proj/guru.git/tree/app-misc/keyd) package maintained by [jack@pngu.org](mailto:jack@pngu.org).
+
+### openSUSE
+[opensuse](https://software.opensuse.org//download.html?project=hardware&package=keyd) package maintained by [@bubbleguuum](https://github.com/bubbleguuum).
+
+Easy install with `sudo zypper in keyd`.
+
+### Ubuntu
+
+A keyd package is available in Ubuntu 25.04 ("plucky") and later.  To install:
+
+```shell
+sudo apt install keyd
+```
+
+In addition, the latest Debian package backported to various Ubuntu releases can
+be found in the [`ppa:keyd-team/ppa`
+archive](https://launchpad.net/~keyd-team/+archive/ubuntu/ppa).
+
+### Void Linux
+
+[xbps](https://github.com/void-linux/void-packages/tree/master/srcpkgs/keyd) package maintained by [@Barbaross](https://gitlab.com/Barbaross).
+
+Easy install with `sudo xbps-install -Su keyd`.
 
 ## From Source
+
+> [!NOTE]
+> The default branch (`master`) is the development branch; it contains the
+> latest work-in-progress code.  Things may occasionally break between releases.
+> Stable releases are [tagged](https://github.com/rvaiya/keyd/tags) and
+> announced on the [releases page](https://github.com/rvaiya/keyd/releases);
+> these versions are known to work.
 
     git clone https://github.com/rvaiya/keyd
     cd keyd
@@ -154,62 +211,6 @@ Experimental support for single board computers (SBCs) via usb-gadget
 has been added courtesy of Giorgi Chavchanidze.
 
 See [usb-gadget.md](src/vkbd/usb-gadget.md) for details.
-
-## Packages
-
-Third party packages for the some distributions also exist. If you wish to add
-yours to the list please file a PR. These are kindly maintained by community
-members, no personal responsibility is taken for them.
-
-### Alpine Linux
-
-[keyd](https://pkgs.alpinelinux.org/packages?name=keyd) package maintained by [@jirutka](https://github.com/jirutka).
-
-### Arch
-
-[Arch Linux](https://archlinux.org/packages/extra/x86_64/keyd/) package maintained by Arch packagers.
-
-### Debian
-
-Experimental `keyd` and `keyd-application-mapper` packages can be found in the
-CI build artifacts of the [work-in-progress Debian package
-repository](https://salsa.debian.org/rhansen/keyd):
-
-  * [amd64 (64-bit)](https://salsa.debian.org/rhansen/keyd/-/jobs/artifacts/debian/latest/browse/debian/output?job=build)
-  * [i386 (32-bit)](https://salsa.debian.org/rhansen/keyd/-/jobs/artifacts/debian/latest/browse/debian/output?job=build%20i386)
-
-Any Debian Developer who is willing to review the debianization effort and
-sponsor its upload is encouraged to contact
-[@rhansen](https://github.com/rhansen) (also see the [Debian ITP
-bug](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1060023)).
-
-### Fedora
-
-[COPR](https://copr.fedorainfracloud.org/coprs/alternateved/keyd/) package maintained by [@alternateved](https://github.com/alternateved).
-
-### Gentoo
-
-[GURU](https://gitweb.gentoo.org/repo/proj/guru.git/tree/app-misc/keyd) package maintained by [jack@pngu.org](mailto:jack@pngu.org).
-
-### openSUSE
-[opensuse](https://software.opensuse.org//download.html?project=hardware&package=keyd) package maintained by [@bubbleguuum](https://github.com/bubbleguuum).
-
-Easy install with `sudo zypper in keyd`.
-
-### Ubuntu
-
-Experimental `keyd` and `keyd-application-mapper` packages can be found in the
-[`ppa:keyd-team/ppa`
-archive](https://launchpad.net/~keyd-team/+archive/ubuntu/ppa).
-
-If you wish to help maintain this PPA, please contact
-[@rhansen](https://github.com/rhansen).
-
-### Void Linux
-
-[xbps](https://github.com/void-linux/void-packages/tree/master/srcpkgs/keyd) package maintained by [@Barbaross](https://gitlab.com/Barbaross).
-
-Easy install with `sudo xbps-install -Su keyd`.
 
 # Example 1
 
