@@ -8,7 +8,7 @@
 struct key_event output[MAX_EVENTS];
 size_t noutput = 0;
 
-static uint64_t get_time_ns()
+static uint64_t get_time_ns(void)
 {
 	struct timespec ts;
 	clock_gettime(CLOCK_MONOTONIC, &ts);
