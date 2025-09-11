@@ -50,13 +50,13 @@ with open('src/unicode.c', 'w') as f:
 	#include <stdlib.h>
 	#include "keys.h"
 
-	uint32_t unicode_table[] = { '''.replace('\n\t', '\n'))
-    sep = ''
-    for code in codes:
-        f.write(sep)
-        sep = ','
+	uint32_t unicode_table[] = {'''.replace('\n\t', '\n'))
+    for i, code in enumerate(codes):
+        f.write('\n\t' if i % 8 == 0 else ' ')
         f.write(str(code))
-    f.write(''' };
+        f.write(',')
+    f.write('''
+	};
 
 	int unicode_lookup_index(uint32_t codepoint)
 	{
@@ -85,5 +85,4 @@ with open('src/unicode.c', 'w') as f:
 		codes[2] = chars[idx / 36 % 36];
 		codes[3] = chars[idx % 36];
 	}
-
 	'''.replace('\n\t', '\n'))
